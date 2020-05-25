@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EaZy_School
 {
-    public partial class Form1 : Form
+    public partial class Registrieren : Form
     {
-        public Form1()
+        public Registrieren()
         {
             InitializeComponent();
         }
