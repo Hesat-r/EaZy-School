@@ -16,5 +16,29 @@ namespace EaZy_School
         {
             InitializeComponent();
         }
+
+        private void Label1_Paint(object sender, PaintEventArgs e)
+        {
+            Font myFont = new Font("ONE DAY", 40);
+            Brush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.Black);
+            e.Graphics.TranslateTransform(80, 13);
+            e.Graphics.RotateTransform(90);
+            label1.BackColor = System.Drawing.Color.Transparent;
+            e.Graphics.DrawString("EaZy-School", myFont, myBrush, 0, 0);
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login sLogin = new Login();
+            this.Hide();
+            sLogin.Show();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            Login sLogin = new Login();
+            this.Hide();
+            sLogin.Show();
+        }
     }
 }

@@ -29,7 +29,18 @@ namespace EaZy_School
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+            Registrieren sRegistrieren = new Registrieren();
+            this.Hide();
+            sRegistrieren.Show();
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            Main sMain = new Main();
+            this.Hide();
+            sMain.Show();
+
+        }
+
     }
 }
