@@ -40,6 +40,7 @@
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +65,6 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(267, 450);
             this.bunifuGradientPanel1.TabIndex = 0;
-
             // 
             // label1
             // 
@@ -75,7 +75,6 @@
             this.label1.Size = new System.Drawing.Size(468, 478);
             this.label1.TabIndex = 0;
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-
             this.label1.Paint += new System.Windows.Forms.PaintEventHandler(this.Label1_Paint);
             // 
             // bunifuGradientPanel2
@@ -89,16 +88,15 @@
             this.bunifuGradientPanel2.Controls.Add(this.bunifuFlatButton1);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuMaterialTextbox2);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuMaterialTextbox1);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(264, 0);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(535, 450);
             this.bunifuGradientPanel2.TabIndex = 1;
-
             // 
             // label3
             // 
@@ -114,6 +112,7 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.White;
@@ -138,7 +137,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "LOGIN";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // bunifuFlatButton1
             // 
@@ -177,7 +175,7 @@
             // 
             // bunifuMaterialTextbox2
             // 
-            this.bunifuMaterialTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.bunifuMaterialTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.White;
@@ -195,11 +193,10 @@
             this.bunifuMaterialTextbox2.TabIndex = 1;
             this.bunifuMaterialTextbox2.Text = "Passwort";
             this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-   
             // 
             // bunifuMaterialTextbox1
             // 
-            this.bunifuMaterialTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.bunifuMaterialTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
@@ -217,7 +214,11 @@
             this.bunifuMaterialTextbox1.TabIndex = 0;
             this.bunifuMaterialTextbox1.Text = "Email";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-      
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Login
             // 
@@ -249,6 +250,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 

@@ -50,6 +50,84 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin Hausaufgaben\Admin_Dienstag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Dienstag.Designer.cs">
+      <DependentUpon>Admin_Dienstag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Donnerstag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Donnerstag.Designer.cs">
+      <DependentUpon>Admin_Donnerstag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Freitag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Freitag.Designer.cs">
+      <DependentUpon>Admin_Freitag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Mittwoch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Mittwoch.Designer.cs">
+      <DependentUpon>Admin_Mittwoch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Montag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Hausaufgaben\Admin_Montag.Designer.cs">
+      <DependentUpon>Admin_Montag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Infos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Infos.Designer.cs">
+      <DependentUpon>Admin_Infos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Dienstag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Dienstag.Designer.cs">
+      <DependentUpon>Admin_Klasuren_Dienstag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Donnerstag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Donnerstag.Designer.cs">
+      <DependentUpon>Admin_Klasuren_Donnerstag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Freitag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Freitag.Designer.cs">
+      <DependentUpon>Admin_Klasuren_Freitag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Mittwoch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Mittwoch.Designer.cs">
+      <DependentUpon>Admin_Klasuren_Mittwoch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Montag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Montag.Designer.cs">
+      <DependentUpon>Admin_Klasuren_Montag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Einstellung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Einstellung.Designer.cs">
+      <DependentUpon>Einstellung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Dienstag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Dienstag.Designer.cs">
+      <DependentUpon>Dienstag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +140,66 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Donnerstag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Donnerstag.Designer.cs">
+      <DependentUpon>Donnerstag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Freitag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Freitag.Designer.cs">
+      <DependentUpon>Freitag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Mittwoch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Mittwoch.Designer.cs">
+      <DependentUpon>Mittwoch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Montag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Hausaufgaben\Montag.Designer.cs">
+      <DependentUpon>Montag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Infos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Infos.Designer.cs">
+      <DependentUpon>Infos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Dienstag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Dienstag.Designer.cs">
+      <DependentUpon>Klasuren_Dienstag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Donnerstag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Donnerstag.Designer.cs">
+      <DependentUpon>Klasuren_Donnerstag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Freitag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Freitag.Designer.cs">
+      <DependentUpon>Klasuren_Freitag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Mittwoch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Mittwoch.Designer.cs">
+      <DependentUpon>Klasuren_Mittwoch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Montag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutzer Klasuren + Info\Klasuren_Montag.Designer.cs">
+      <DependentUpon>Klasuren_Montag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrieren.cs">
@@ -70,11 +208,80 @@
     <Compile Include="Registrieren.Designer.cs">
       <DependentUpon>Registrieren.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin Hausaufgaben\Admin_Dienstag.resx">
+      <DependentUpon>Admin_Dienstag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Hausaufgaben\Admin_Donnerstag.resx">
+      <DependentUpon>Admin_Donnerstag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Hausaufgaben\Admin_Freitag.resx">
+      <DependentUpon>Admin_Freitag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Hausaufgaben\Admin_Mittwoch.resx">
+      <DependentUpon>Admin_Mittwoch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Hausaufgaben\Admin_Montag.resx">
+      <DependentUpon>Admin_Montag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Klasuren und Infos\Admin_Infos.resx">
+      <DependentUpon>Admin_Infos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Klasuren und Infos\Admin_Klasuren_Dienstag.resx">
+      <DependentUpon>Admin_Klasuren_Dienstag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Klasuren und Infos\Admin_Klasuren_Donnerstag.resx">
+      <DependentUpon>Admin_Klasuren_Donnerstag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Klasuren und Infos\Admin_Klasuren_Freitag.resx">
+      <DependentUpon>Admin_Klasuren_Freitag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Klasuren und Infos\Admin_Klasuren_Mittwoch.resx">
+      <DependentUpon>Admin_Klasuren_Mittwoch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Klasuren und Infos\Admin_Klasuren_Montag.resx">
+      <DependentUpon>Admin_Klasuren_Montag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Einstellung.resx">
+      <DependentUpon>Einstellung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Hausaufgaben\Dienstag.resx">
+      <DependentUpon>Dienstag.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Hausaufgaben\Donnerstag.resx">
+      <DependentUpon>Donnerstag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Hausaufgaben\Freitag.resx">
+      <DependentUpon>Freitag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Hausaufgaben\Mittwoch.resx">
+      <DependentUpon>Mittwoch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Hausaufgaben\Montag.resx">
+      <DependentUpon>Montag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Klasuren + Info\Infos.resx">
+      <DependentUpon>Infos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Klasuren + Info\Klasuren_Dienstag.resx">
+      <DependentUpon>Klasuren_Dienstag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Klasuren + Info\Klasuren_Donnerstag.resx">
+      <DependentUpon>Klasuren_Donnerstag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Klasuren + Info\Klasuren_Freitag.resx">
+      <DependentUpon>Klasuren_Freitag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Klasuren + Info\Klasuren_Mittwoch.resx">
+      <DependentUpon>Klasuren_Mittwoch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutzer Klasuren + Info\Klasuren_Montag.resx">
+      <DependentUpon>Klasuren_Montag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,5 +308,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

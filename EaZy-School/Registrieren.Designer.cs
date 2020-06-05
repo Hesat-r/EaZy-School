@@ -59,10 +59,10 @@
             this.bunifuGradientPanel2.Controls.Add(this.bunifuFlatButton1);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuMaterialTextbox2);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuMaterialTextbox1);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(265, 0);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
@@ -71,7 +71,7 @@
             // 
             // bunifuMaterialTextbox4
             // 
-            this.bunifuMaterialTextbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.bunifuMaterialTextbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.White;
@@ -92,7 +92,7 @@
             // 
             // bunifuMaterialTextbox3
             // 
-            this.bunifuMaterialTextbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.bunifuMaterialTextbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.White;
@@ -125,6 +125,7 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.White;
@@ -187,7 +188,7 @@
             // 
             // bunifuMaterialTextbox2
             // 
-            this.bunifuMaterialTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.bunifuMaterialTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.White;
@@ -208,7 +209,7 @@
             // 
             // bunifuMaterialTextbox1
             // 
-            this.bunifuMaterialTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.bunifuMaterialTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
