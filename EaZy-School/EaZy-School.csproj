@@ -32,9 +32,33 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>98c7fa22d316ea049d14fccf39b6b7f6%284%29.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.46.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.46.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.46.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.46.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.46.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.46.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.46.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.46.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.46.0.1964, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v3.1.46.0.1964\lib\net45\Google.Apis.Drive.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.46.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.46.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -116,12 +140,19 @@
     <Compile Include="Admin Klasuren und Infos\Admin_Klasuren_Montag.Designer.cs">
       <DependentUpon>Admin_Klasuren_Montag.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Main.Designer.cs">
+      <DependentUpon>Admin_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Einstellung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Einstellung.Designer.cs">
       <DependentUpon>Einstellung.cs</DependentUpon>
     </Compile>
+    <Compile Include="GoogleDriveFiles.cs" />
     <Compile Include="Nutzer Hausaufgaben\Dienstag.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,12 +233,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registrieren.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Registrieren.Designer.cs">
-      <DependentUpon>Registrieren.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Admin Hausaufgaben\Admin_Dienstag.resx">
       <DependentUpon>Admin_Dienstag.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin Klasuren und Infos\Admin_Klasuren_Montag.resx">
       <DependentUpon>Admin_Klasuren_Montag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Main.resx">
+      <DependentUpon>Admin_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Einstellung.resx">
       <DependentUpon>Einstellung.cs</DependentUpon>
@@ -292,9 +320,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Registrieren.resx">
-      <DependentUpon>Registrieren.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -308,6 +334,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="98c7fa22d316ea049d14fccf39b6b7f6%284%29.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

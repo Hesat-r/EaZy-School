@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,11 @@ using EaZy_School.Nutzer_Klasuren___Info;
 
 namespace EaZy_School
 {
+
     public partial class Main : Form
     {
+
+       
         public Main()
         {
             InitializeComponent();
@@ -25,17 +29,18 @@ namespace EaZy_School
 
         }
 
+
+
         #region SubPannel
 
-        
 
-      
+
+
         private void customdesign()
         {
             subpannelHausaufgaben.Visible = false;
             subpannelKlasuren.Visible = false;
-            subpannelAdminHa.Visible = false;
-            subpanneladminw.Visible = false;
+          
         }
 
         private void hidesubpannel()
@@ -48,14 +53,7 @@ namespace EaZy_School
             {
                 subpannelKlasuren.Visible = false;
             }
-            if (subpannelAdminHa.Visible == true)
-            {
-                subpannelAdminHa.Visible = false;
-            }
-            if (subpanneladminw.Visible == true)
-            {
-                subpanneladminw.Visible = false;
-            }
+          
         }
   
 
@@ -179,10 +177,7 @@ namespace EaZy_School
         
 
         
-        private void AdminHausaufgabenButton_Click(object sender, EventArgs e)
-        {
-            showsubpannel(subpannelAdminHa);
-        }
+      
 
         private void button19_Click(object sender, EventArgs e)
         {
@@ -193,9 +188,11 @@ namespace EaZy_School
 
         private void button18_Click(object sender, EventArgs e)
         {
-            openchildForm(new Admin_Dienstag());
-            //CODE
-            hidesubpannel();
+
+                openchildForm(new Admin_Dienstag());
+                //CODE
+                hidesubpannel();
+
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -225,10 +222,7 @@ namespace EaZy_School
         
 
        
-        private void AdminWeiteresButton_Click(object sender, EventArgs e)
-        {
-            showsubpannel(subpanneladminw);
-        }
+      
         private void button20_Click(object sender, EventArgs e)
         {
             openchildForm(new Admin_Klasuren_Montag());
@@ -291,14 +285,6 @@ namespace EaZy_School
 
         #endregion
 
-        #region admin Info
-        private void button21_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Infos());
-        }
-
-
-        #endregion
 
         #region Einstellungen
 
