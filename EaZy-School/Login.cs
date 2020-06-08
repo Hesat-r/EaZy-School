@@ -14,10 +14,7 @@ namespace EaZy_School
 {
     public partial class Login : Form
     {
-        private SqlConnection con;
-        private SqlCommand com;
-        private SqlDataAdapter sda;
-        private DataTable dt;
+
 
         public Login()
         {
@@ -40,7 +37,7 @@ namespace EaZy_School
 
 
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        public void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             SqlConnection con =
                 new SqlConnection("Data Source=HESATS-PC;Initial Catalog=EaZy;Integrated Security=True");

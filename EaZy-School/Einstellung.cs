@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,5 +17,38 @@ namespace EaZy_School
         {
             InitializeComponent();
         }
+
+        
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+
+
+            string path = @"C:\Program Files\EaZy-School\SchoolCategory.txt";
+           
+
+            if (!File.Exists(path))
+            {
+                File.Create(path).Dispose();
+
+                using (TextWriter tw = new StreamWriter(path))
+                {
+                    tw.Write(schulcodetextbox.Text);
+                }
+
+            }
+            else
+            {
+                 using (TextWriter tw = new StreamWriter(path))
+                {
+                    tw.Write(schulcodetextbox.Text);
+                }
+            }
+            
+
+
+        }
+
+       
     }
 }

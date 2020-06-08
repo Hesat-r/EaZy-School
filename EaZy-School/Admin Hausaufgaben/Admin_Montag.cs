@@ -9,11 +9,13 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EaZy_School;
 
 namespace EaZy_School.Admin_Hausaufgaben
 {
-    public partial class Admin_Montag : Form
+    public partial class Admin_Montag : Form 
     {
+       
         public Admin_Montag()
         {
             InitializeComponent();
@@ -21,10 +23,14 @@ namespace EaZy_School.Admin_Hausaufgaben
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+
+            
             WebClient client = new WebClient();
             Stream stream = client.OpenWrite("https://villaitalia.000webhostapp.com/Textbox.txt");
             StreamWriter write = new StreamWriter(stream);
+          
             
+
 
 
 
