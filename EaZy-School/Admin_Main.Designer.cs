@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Main));
             this.SidemenuPannel = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
@@ -55,6 +56,7 @@
             this.Zeit = new System.Windows.Forms.Label();
             this.Datum = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SidemenuPannel.SuspendLayout();
             this.AdminSubpannelKlasuren.SuspendLayout();
             this.adminsubpannelHausaufgaben.SuspendLayout();
@@ -330,6 +332,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "EaZy-School";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panelMain
             // 
@@ -418,7 +421,6 @@
             this.Datum.Size = new System.Drawing.Size(94, 31);
             this.Datum.TabIndex = 7;
             this.Datum.Text = "Datum";
-   
             // 
             // label1
             // 
@@ -432,6 +434,11 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "EaZy-School";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Admin_Main
             // 
@@ -488,5 +495,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Datum;
         private System.Windows.Forms.Label Zeit;
+        private System.Windows.Forms.Timer timer1;
     }
 }

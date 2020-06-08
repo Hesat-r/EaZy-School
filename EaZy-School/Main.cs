@@ -24,8 +24,9 @@ namespace EaZy_School
         {
             InitializeComponent();
             customdesign();
-            Datum.Text = DateTime.Now.ToLongDateString();
-            Zeit.Text = DateTime.Now.ToLongTimeString();
+           
+            timer1.Start();
+           
 
         }
 
@@ -293,9 +294,14 @@ namespace EaZy_School
         {
             openchildForm(new Einstellung());
         }
+
+
         #endregion
 
-       
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Datum.Text = DateTime.Now.ToLongDateString();
+            Zeit.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }

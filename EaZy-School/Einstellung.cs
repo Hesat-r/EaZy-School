@@ -25,7 +25,13 @@ namespace EaZy_School
 
 
             string path = @"C:\Program Files\EaZy-School\SchoolCategory.txt";
-           
+            string ordner = @"C:\Program Files\EaZy-School";
+
+
+            if (!Directory.Exists(ordner))
+            {
+                Directory.CreateDirectory(ordner);
+            }
 
             if (!File.Exists(path))
             {

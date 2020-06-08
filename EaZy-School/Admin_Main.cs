@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EaZy_School.Admin_Hausaufgaben;
@@ -18,8 +19,10 @@ namespace EaZy_School
         {
             InitializeComponent();
             customdesign();
-            Datum.Text = DateTime.Now.ToLongDateString();
-            Zeit.Text = DateTime.Now.ToLongTimeString();
+
+               timer1.Start();
+            
+           
         }
 
         #region customdesign
@@ -206,8 +209,20 @@ namespace EaZy_School
             //CODE
             hidesubpannel();
         }
+
         #endregion
 
-       
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Datum.Text = DateTime.Now.ToLongDateString();
+            Zeit.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Admin_Main AdminMain = new Admin_Main();
+            this.Hide();
+            AdminMain.Show();        
+        }
     }
 }

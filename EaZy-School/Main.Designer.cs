@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +46,9 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.SidemenuPannel = new System.Windows.Forms.Panel();
+            this.button22 = new System.Windows.Forms.Button();
+            this.InfosButton = new System.Windows.Forms.Button();
+            this.KlasurenButton = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,9 +57,7 @@
             this.Zeit = new System.Windows.Forms.Label();
             this.Datum = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.KlasurenButton = new System.Windows.Forms.Button();
-            this.InfosButton = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.subpannelHausaufgaben.SuspendLayout();
             this.subpannelKlasuren.SuspendLayout();
             this.SidemenuPannel.SuspendLayout();
@@ -205,6 +207,33 @@
             this.SidemenuPannel.Controls.Add(this.label2);
             this.SidemenuPannel.Name = "SidemenuPannel";
             // 
+            // button22
+            // 
+            resources.ApplyResources(this.button22, "button22");
+            this.button22.FlatAppearance.BorderSize = 0;
+            this.button22.ForeColor = System.Drawing.Color.White;
+            this.button22.Name = "button22";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // InfosButton
+            // 
+            resources.ApplyResources(this.InfosButton, "InfosButton");
+            this.InfosButton.FlatAppearance.BorderSize = 0;
+            this.InfosButton.ForeColor = System.Drawing.Color.White;
+            this.InfosButton.Name = "InfosButton";
+            this.InfosButton.UseVisualStyleBackColor = true;
+            this.InfosButton.Click += new System.EventHandler(this.InfosButton_Click);
+            // 
+            // KlasurenButton
+            // 
+            resources.ApplyResources(this.KlasurenButton, "KlasurenButton");
+            this.KlasurenButton.FlatAppearance.BorderSize = 0;
+            this.KlasurenButton.ForeColor = System.Drawing.Color.White;
+            this.KlasurenButton.Name = "KlasurenButton";
+            this.KlasurenButton.UseVisualStyleBackColor = true;
+            this.KlasurenButton.Click += new System.EventHandler(this.KlasurenButton_Click);
+            // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(17)))), ((int)(((byte)(20)))));
@@ -265,32 +294,10 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
-            // KlasurenButton
+            // timer1
             // 
-            resources.ApplyResources(this.KlasurenButton, "KlasurenButton");
-            this.KlasurenButton.FlatAppearance.BorderSize = 0;
-            this.KlasurenButton.ForeColor = System.Drawing.Color.White;
-            this.KlasurenButton.Name = "KlasurenButton";
-            this.KlasurenButton.UseVisualStyleBackColor = true;
-            this.KlasurenButton.Click += new System.EventHandler(this.KlasurenButton_Click);
-            // 
-            // InfosButton
-            // 
-            resources.ApplyResources(this.InfosButton, "InfosButton");
-            this.InfosButton.FlatAppearance.BorderSize = 0;
-            this.InfosButton.ForeColor = System.Drawing.Color.White;
-            this.InfosButton.Name = "InfosButton";
-            this.InfosButton.UseVisualStyleBackColor = true;
-            this.InfosButton.Click += new System.EventHandler(this.InfosButton_Click);
-            // 
-            // button22
-            // 
-            resources.ApplyResources(this.button22, "button22");
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Name = "button22";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Main
             // 
@@ -340,5 +347,6 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button InfosButton;
         private System.Windows.Forms.Button KlasurenButton;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -4,11 +4,17 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EaZy_School.Notification;
+using ToastNotifications;
+using ToastNotifications.Lifetime;
+using ToastNotifications.Position;
+
 
 namespace EaZy_School
 {
@@ -36,9 +42,27 @@ namespace EaZy_School
         }
 
 
-
+        private void Succes(String Message)
+        {
+            Notification.Succes succes = new Notification.Succes(Message);
+            succes.Show();
+        }
+        private void Info(String Message)
+        {
+            Notification.Info info = new Notification.Info(Message);
+            info.Show();
+        }
+        private void Error(String Message)
+        {
+            Notification.Error error = new Notification.Error(Message);
+            error.Show();
+        }
         public void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+
+
+          
+
             SqlConnection con =
                 new SqlConnection("Data Source=HESATS-PC;Initial Catalog=EaZy;Integrated Security=True");
             try
@@ -56,7 +80,7 @@ namespace EaZy_School
                     var c = reader["Category"].ToString();
                     if (c == "admin")
                     {
-                        MessageBox.Show("Willkommen Admin " + Benutzertext.Text);
+                        Succes("Willkommen Admin " + Benutzertext.Text);
                         this.Hide();
                         Admin_Main f1 = new Admin_Main();
                         f1.Show();
@@ -64,7 +88,8 @@ namespace EaZy_School
 
                     else
                     {
-                        MessageBox.Show("Wilkommen " + Benutzertext.Text);
+                       
+                        Succes("Wilkommen " + Benutzertext.Text);
                         this.Hide();
                         Main f3 = new Main();
                         f3.Show();
@@ -72,14 +97,14 @@ namespace EaZy_School
                 }
                 else
                 {
-                    MessageBox.Show("Benutzername oder Passwort Falsch");
+                   Error("Benutzername oder Passwort Falsch");
                 }
 
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unexpected error:" + ex.Message);
+                Error("Unexpected error:" + ex.Message);
             }
 
         }

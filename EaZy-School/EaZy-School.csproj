@@ -60,6 +60,7 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -72,6 +73,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ToastNotifications, Version=2.5.1.0, Culture=neutral, PublicKeyToken=e89d9d7314a7c797, processorArchitecture=MSIL">
+      <HintPath>..\packages\ToastNotifications.2.5.1\lib\net40\ToastNotifications.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin Hausaufgaben\Admin_Dienstag.cs">
@@ -152,7 +156,24 @@
     <Compile Include="Einstellung.Designer.cs">
       <DependentUpon>Einstellung.cs</DependentUpon>
     </Compile>
-    <Compile Include="GoogleDriveFiles.cs" />
+    <Compile Include="Notification\Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification\Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification\Succes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification\Succes.Designer.cs">
+      <DependentUpon>Succes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nutzer Hausaufgaben\Dienstag.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +293,15 @@
     <EmbeddedResource Include="Einstellung.resx">
       <DependentUpon>Einstellung.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Notification\Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification\Succes.resx">
+      <DependentUpon>Succes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Nutzer Hausaufgaben\Dienstag.resx">
       <DependentUpon>Dienstag.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,5 +367,6 @@
   <ItemGroup>
     <Content Include="98c7fa22d316ea049d14fccf39b6b7f6%284%29.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
