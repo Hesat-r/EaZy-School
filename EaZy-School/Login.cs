@@ -12,9 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EaZy_School.Notification;
-using ToastNotifications;
-using ToastNotifications.Lifetime;
-using ToastNotifications.Position;
+
 
 
 namespace EaZy_School

@@ -117,4 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALUAAAAyCAYAAAAa5prJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEvSURBVHhe7d27SkNBGIVRn0SM5qLEJBAQohAVRcQgCkJQ
+        sLa3s7OyEHzokXMiESUvMJtVrGbY5cffztbO9qhAElETR9TEETVxRE0cURNnHXV3PivD19sy/nqE6jTt
+        9q7nv1F3z0/ax+7x7E/xUIum3YOXm9K/O1tFPXy7L3vTo41jqEWnNymjj+Uq6uZ8/x9AjZqWRU0UURNH
+        1MQRNXFETRxRE0fUxBE1cURNHFETR9TEETVxRE0cURNH1MQRNXFETRxRE0fUxBE1cURNHFETR9TEETVx
+        RE0cURNH1MQRNXFETRxRE0fUxBE1cdZRH74/lN3hdOMIqtGZlPHnz08Cg+VF2X++2jyESvQXp+2/L23U
+        jcHTZXu6oVZN0M21XkcNKURNHFETR9TEETVhRuUb6AcUOK+vOLoAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>
