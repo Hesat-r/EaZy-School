@@ -60,16 +60,16 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 4000;
+            this.timer1.Interval = 6500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label2.Location = new System.Drawing.Point(113, 32);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.25F);
+            this.label2.Location = new System.Drawing.Point(69, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
             // 

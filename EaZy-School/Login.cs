@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -26,10 +27,6 @@ namespace EaZy_School
         {
             InitializeComponent();
         }
-
-
-
-
 
         private void Label1_Paint(object sender, PaintEventArgs e)
         {
@@ -84,6 +81,24 @@ namespace EaZy_School
                         this.Hide();
                         Admin_Main f1 = new Admin_Main();
                         f1.Show();
+
+
+                        string datei = @"C:\Program Files\EaZy-School\firsttime.txt";
+                        string ordner = @"C:\Program Files\EaZy-School";
+
+                        if (!Directory.Exists(ordner))
+                        {
+                            Directory.CreateDirectory(ordner);
+                        }
+
+                        if (!File.Exists(datei))
+                        {
+                            File.Create(datei).Dispose();
+
+                           Info("bei den Einstellungen muss der schulcode eingegeben werden!");
+
+                        }
+
                     }
 
                     else
@@ -121,7 +136,6 @@ namespace EaZy_School
            
 
             Passwort.PasswordChar = '*';
-            // Align the text in the center of the TextBox control.
             Passwort.TextAlign = HorizontalAlignment.Center;
         }
 
