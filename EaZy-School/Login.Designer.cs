@@ -34,6 +34,8 @@
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,8 +44,6 @@
             this.Benutzertext = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.label4 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,6 +104,32 @@
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(553, 489);
             this.bunifuGradientPanel2.TabIndex = 1;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.25F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(211, 341);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(154, 19);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Anmeldedaten merken?";
+            // 
+            // bunifuCheckbox1
+            // 
+            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bunifuCheckbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bunifuCheckbox1.Checked = false;
+            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox1.Location = new System.Drawing.Point(185, 341);
+            this.bunifuCheckbox1.Name = "bunifuCheckbox1";
+            this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox1.TabIndex = 7;
+            this.bunifuCheckbox1.Tag = "";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -122,7 +148,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(123, 317);
+            this.label3.Location = new System.Drawing.Point(114, 312);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(358, 20);
             this.label3.TabIndex = 5;
@@ -161,7 +187,7 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(148, 384);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(148, 376);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -227,32 +253,6 @@
             // 
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
-            // 
-            // bunifuCheckbox1
-            // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.Checked = true;
-            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(333, 350);
-            this.bunifuCheckbox1.Name = "bunifuCheckbox1";
-            this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox1.TabIndex = 7;
-            this.bunifuCheckbox1.Tag = "";
-           
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.25F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(155, 350);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 19);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Anmeldedaten merken?";
             // 
             // Login
             // 
