@@ -104,7 +104,7 @@ namespace EaZy_School.Admin_Hausaufgaben
         {
             string path = @"C:\Program Files\EaZy-School\SchoolCategory.txt";
             var read = File.ReadAllText(path);
-            string server = "ftp://eazy-school@files.000webhost.com/" + read + "/Mittwoch.txt";
+            string server = "ftp://eazy-school@files.000webhost.com/" + read + "/Freitag.txt";
             FtpWebRequest request = (FtpWebRequest)WebRequest.Create(server);
             request.Credentials = new NetworkCredential("eazy-school", "Tonicati1");
             request.Method = WebRequestMethods.Ftp.DownloadFile;

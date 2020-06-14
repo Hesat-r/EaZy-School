@@ -13,6 +13,7 @@ using EaZy_School.Admin_Klasuren_und_Infos;
 using EaZy_School.Nutzer;
 using EaZy_School.Nutzer_Klasuren___Info;
 
+
 namespace EaZy_School
 {
 
@@ -30,6 +31,25 @@ namespace EaZy_School
 
         }
 
+        #region notification
+
+        private void Succes(String Message)
+        {
+            Notification.Succes succes = new Notification.Succes(Message);
+            succes.Show();
+        }
+        private void Info(String Message)
+        {
+            Notification.Info info = new Notification.Info(Message);
+            info.Show();
+        }
+        private void Error(String Message)
+        {
+            Notification.Error error = new Notification.Error(Message);
+            error.Show();
+        }
+
+        #endregion
 
 
         #region SubPannel
@@ -173,88 +193,7 @@ namespace EaZy_School
         }
         #endregion
 
-        #region AdminHausaufgaben
-
         
-
-        
-      
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Montag());
-            //CODE
-            hidesubpannel();
-        }
-
-        private void button18_Click(object sender, EventArgs e)
-        {
-
-                openchildForm(new Admin_Dienstag());
-                //CODE
-                hidesubpannel();
-
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Mittwoch());
-            //CODE
-            hidesubpannel();
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Donnerstag());
-            //CODE
-            hidesubpannel();
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Freitag());
-            //CODE
-            hidesubpannel();
-        }
-        #endregion
-
-        #region AdminWeiteres
-
-        
-
-       
-      
-        private void button20_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Klasuren_Montag());
-            hidesubpannel();
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Klasuren_Dienstag());
-            hidesubpannel();
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-           openchildForm(new Admin_Klasuren_Mittwoch());
-           hidesubpannel();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Klasuren_Donnerstag());
-            hidesubpannel();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            openchildForm(new Admin_Klasuren_Freitag());
-            hidesubpannel();
-        }
-
-        #endregion
 
         #region Main
 
@@ -302,6 +241,14 @@ namespace EaZy_School
         {
             Datum.Text = DateTime.Now.ToLongDateString();
             Zeit.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Succes("Erfolgreich Ausgelogt");
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }

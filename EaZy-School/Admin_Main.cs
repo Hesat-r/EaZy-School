@@ -24,12 +24,30 @@ namespace EaZy_School
             
            
         }
+        #region notification
 
+        private void Succes(String Message)
+        {
+            Notification.Succes succes = new Notification.Succes(Message);
+            succes.Show();
+        }
+        private void Info(String Message)
+        {
+            Notification.Info info = new Notification.Info(Message);
+            info.Show();
+        }
+        private void Error(String Message)
+        {
+            Notification.Error error = new Notification.Error(Message);
+            error.Show();
+        }
+
+        #endregion
         #region customdesign
 
-        
 
-            private void customdesign()
+
+        private void customdesign()
         {
             adminsubpannelHausaufgaben.Visible = false;
             AdminSubpannelKlasuren.Visible = false;
@@ -223,6 +241,14 @@ namespace EaZy_School
             Admin_Main AdminMain = new Admin_Main();
             this.Hide();
             AdminMain.Show();        
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Succes("Erfolgreich Ausgelogt");
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }

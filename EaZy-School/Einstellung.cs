@@ -18,7 +18,21 @@ namespace EaZy_School
             InitializeComponent();
         }
 
-        
+        private void Succes(String Message)
+        {
+            Notification.Succes succes = new Notification.Succes(Message);
+            succes.Show();
+        }
+        private void Info(String Message)
+        {
+            Notification.Info info = new Notification.Info(Message);
+            info.Show();
+        }
+        private void Error(String Message)
+        {
+            Notification.Error error = new Notification.Error(Message);
+            error.Show();
+        }
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
 
@@ -55,6 +69,6 @@ namespace EaZy_School
 
         }
 
-       
+  
     }
 }
